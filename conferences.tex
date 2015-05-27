@@ -1,0 +1,118 @@
+% Conference macros
+% include this in enclosing document for long conference names
+%\def\longconferencenames{}
+
+%  Use this one for the cv notes
+%\def\includecvnotes{}
+%\def\includebionotes{}
+
+\newcommand{\confname}[3]{
+\ifx\longconferencenames\undefined
+\newcommand{#1}[0]{{#2}}
+\else
+\newcommand{#1}[0]{{#3}}
+\fi
+}
+
+\newcommand{\cvnote}[1]{
+\ifx\includecvnotes\undefined
+%
+\else
+{#1}%
+\fi
+}
+
+
+\newcommand{\bionote}[1]{
+\ifx\includebionotes\undefined
+%
+\else
+{#1}%
+\fi
+}
+
+
+\confname{\podc}{PODC}{Proceedings of the ACM symposium on Principles of
+distributed computing (PODC)}
+
+\confname{\asplos}{ASPLOS}{{Proceedings of the ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)}}
+
+\confname{\spaa}{SPAA}{{Proceedings of the ACM symposium on Parallelism in algorithms and architectures (SPAA)}}
+
+\confname{\osdi}{OSDI}{{Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI)}}
+
+\confname{\disc}{DISC}{{Proceedings of the International Conference on Distributed Computing (DISC)}}
+
+\confname{\usenixatc}{USENIX}{{Proceedings of the USENIX Annual Technical Conference}}
+\confname{\usenixsec}{USENIX Security}{{Proceedings of the USENIX Security Symposium}}
+
+\confname{\pldi}{PLDI}{{Proceedings of the ACM SIGPLAN conference on Programming language design and implementation (PLDI)}}
+
+\confname{\computer}{Computer}{{IEEE Computer}}
+
+\confname{\sosp}{SOSP}{{Proceedings of the ACM SIGOPS Symposium on Operating Systems Principles (SOSP)}}
+
+\confname{\isca}{ISCA}{{Proceedings of the ACM IEEE International Symposium on Computer Architecture (ISCA)}}
+
+\confname{\csaw}{CSAW}{{Proceedings of the ACM Workshop on Computer Security Architecture (CSAW)}}
+
+\confname{\wddd}{WDDD}{{Proceedings of the Workshop on Duplicating, Deconstructing, and Debunking (WDDD)}}
+
+\confname{\vldb}{VLDB}{{Proceedings of the International Conference on Very Large Databases (VLDB)}}
+
+\confname{\toplas}{TOPLAS}{{ACM Transactions on Programming Languages and Systems (TOPLAS)}}
+
+\confname{\tocs}{TOCS}{{ACM Transactions on Computer Systems (TOCS)}}
+
+\confname{\ppopp}{{PPoPP}}{{Proceedings of the ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming (PPoPP)}}
+
+\confname{\jpdc}{J. Parallel Distrib. Comput.}{{Journal of Parallel and Distributed Computing}}
+
+\confname{\ismm}{ISMM}{{Proceedings of the ACM International Symposium on Memory Management (ISMM)}}
+
+\confname{\cacm}{CACM}{{Communications of the ACM (CACM)}}
+
+\confname{\hpca}{HPCA}{{Proceedings of the IEEE International Symposium on High-Performance Computer Architecture (HPCA)}}
+
+\confname{\transact}{TRANSACT}{{Proceedings of the ACM SIGPLAN Workshop on Transactional Computing (TRANSACT)}}
+
+\confname{\iiswc}{IISWC}{{Proceedings of the IEEE International Symposium on Workload Characterization (IISWC)}}
+
+\confname{\tpds}{IEEE Trans, Parallel Distrib. Syst.}{{IEEE Transactions on Parallel and Distributed Systems}}
+
+\confname{\osr}{OSR}{{ACM Operating Systems Review}}
+
+\confname{\nsdi}{NSDI}{{Proceedings of the USENIX Symposium on Networked Systems Design and Implementation (NSDI)}}
+
+\confname{\cc}{CC}{{Proceedings of the International Conference on Compiler Construction (CC)}}
+
+\confname{\surveys}{ACM Comput. Surv.}{{ACM Computing Surveys}}
+\confname{\icde}{IDCE}{{Proceedings of the IEEE International Conference on Data Engineering (ICDE)}}
+\confname{\fast}{FAST}{{Proceedings of the USENIX Conference on File and Storage Technologies (FAST)}}
+\confname{\eurosys}{{E}uro{S}ys}{{Proceedings of the ACM European Conference on Computer Systems ({E}uro{S}ys)}}
+\confname{\hotos}{HotOS}{{Proceedings of the USENIX Workshop on Hot Topics in Operating Systems (HotOS)}}
+\confname{\oopsla}{OOPSLA}{{Proceedings of the ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA)}}
+\confname{\ndss}{NDSS}{{Proceedings of the Network and Distributed System Security Symposium (NDSS)}}
+\confname{\oakland}{Oakland}{{Proceedings of the IEEE Symposium on Security and Privacy (Oakland)}}
+\confname{\ispass}{ISPASS}{Proceedings of the IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)}
+
+\confname{\europar}{{E}uro{P}ar}{{Proceedings of the European Conference on Parallel Programming ({E}uro{P}ar)}}
+
+\confname{\sigcse}{{SIGCSE}}{{Proceedings of the ACM SIGCSE technical symposium on Computer science education (SIGCSE)}}
+
+\confname{\ccs}{{CCS}}{{Proceedings of the ACM Conference on Computer and Communications Security (CCS)}}
+
+\confname{\veeconf}{{VEE}}{{Proceedings of the International Conference on Virtual Execution Environments (VEE)}}
+
+\confname{\lisa}{{LISA}}{{Proceedings of the Large Installation System Administration Conference (LISA)}}
+\confname{\scool}{SCOOL}{{Proceedings of the Workshop on Synchronization and Concurrency in Object-Oriented Languages (SCOOL)}}
+\confname{\cgo}{CGO}{{Proceedings of the International Symposium on Code Generation and Optimization (CGO)}}
+\confname{\dsn}{{DSN}}{Proceedings of the International Conference on Dependable Systems and Networks (DSN)}
+\confname{\apsys}{{APSYS}}{Proceedings of the Asia-Pacific Workshop on Systems (APSYS)}
+\confname{\ew}{{EW}}{Proceedings of the workshop on ACM SIGOPS European workshop (EW)}
+\confname{\srds}{{SRDS}}{IEEE Symposium on Reliable Distributed Systems (SRDS)}
+\confname{\raid}{{RAID}}{Proceedings of the international conference on Research in Attacks, Intrusions, and Defenses (RAID)}
+\confname{\acsac}{{ACSAC}}{Proceedings of the Annual Computer Security Applications Conference (ACSAC)}
+\confname{\cloud}{{CLOUD}}{IEEE International Conference on Cloud Computing (CLOUD)}
+\confname{\ssym}{{SS}}{Proceedings of the conference on Security symposium (SS)}
+\confname{\trustcom}{{TRUSTCOM}}{Proceedings of the IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TRUSTCOM)}
